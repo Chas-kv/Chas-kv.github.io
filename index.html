@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<button class="theme-btn" onclick="toggleTheme()">
+    🌙 Dark Mode
+</button>
 <header>
     <h1>Kevin Chavarria</h1>
     <p>Mechatronics Engineer | AI | Machine Learning | IoT | Automation</p>
@@ -91,6 +93,10 @@
 <footer>
     <p>© 2026 Kevin Chavarria</p>
 </footer>
-
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
 </body>
 </html>

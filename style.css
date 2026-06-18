@@ -79,6 +79,9 @@ nav {
 
 
 }
+body {
+    padding-top: 60px;
+}
 
 nav a {
     color: white;

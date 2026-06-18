@@ -60,9 +60,22 @@ header {
 }
 
 nav {
-    background: var(--nav-bg);
+   
+   
+    background: rgba(17, 24, 39, 0.95);
+
     padding: 15px;
+
     text-align: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    backdrop-filter: blur(10px);
+
+
 }
 
 nav a {
@@ -75,6 +88,11 @@ section {
     max-width: 1000px;
     margin: auto;
     padding: 40px 20px;
+
+    scroll-margin-top: 80px;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 .card {

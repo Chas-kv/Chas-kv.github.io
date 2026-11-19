@@ -3,287 +3,420 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Chavarria | AI & Automation Engineer</title>
+    <title data-i18n="page_title">Kevin Chavarria | AI & Automation Engineer</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<button class="theme-btn" onclick="toggleTheme()">
-    🌙
-</button>
+
+<div class="floating-controls">
+    <button class="control-btn lang-btn" id="lang-btn" onclick="toggleLanguage()" title="Switch Language">
+        ES
+    </button>
+    <button class="control-btn theme-btn" id="theme-btn" onclick="toggleTheme()" title="Toggle Theme">
+        🌙
+    </button>
+</div>
+
 <header>
     <h1>Kevin Chavarria</h1>
-    <p>Mechatronics Engineer | AI | Machine Learning | IoT | Automation</p>
+    <p data-i18n="subtitle">Mechatronics Engineer | AI | Machine Learning | IoT | Automation</p>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#projects" data-i18n="nav_projects">Projects</a>
+    <a href="#certifications" data-i18n="nav_certifications">Certifications</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
 </nav>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>
+    <h2 data-i18n="about_title">About Me</h2>
+    <p data-i18n="about_p1">
         I am a Mechatronics Engineer with hands-on experience in Python, Machine Learning, 
         IoT systems, industrial automation, cloud technologies, and cybersecurity.
     </p>
-    <p>
-       My background combines hardware and software development, allowing me to design intelligent solutions that integrate sensors,
-       cloud services, automation systems and data analysis.
-        
+    <p data-i18n="about_p2">
+        My background combines hardware and software development, allowing me to design intelligent solutions that integrate sensors,
+        cloud services, automation systems and data analysis.
     </p>
-    <p>
+    <p data-i18n="about_p3">
         I have developed IoT prototypes using ESP8266, MQTT, Ubidots, and Raspberry Pi, applied machine learning techniques with
-         Python and Scikit-Learn, and I worked on cybersecurity assessments and hardening for IoT devices.
-
+        Python and Scikit-Learn, and I worked on cybersecurity assessments and hardening for IoT devices.
     </p>
-    <p>
+    <p data-i18n="about_p4">
         I am particularly interested in Artificial Intelligence, automation, data-driven solutions, and cloud-based systems,
         and I am continuously expanding my skills in Google Cloud and AWS technologies.
     </p>
-   
 </section>
  
 <section id="skills">
-    <h2>Skills</h2>
-<div class="card">
-    <h3>AI & Data</h3>
-    <ul>
-        <li>Python</li>
-        <li>Machine Learning</li>
-        <li>Scikit-Learn</li>
-        <li>Pandas</li>
-        <li>Data Analysis</li>
-        <li>Data Cleaning</li>
-    </ul>
-</div>
+    <h2 data-i18n="skills_title">Skills</h2>
+    <div class="card">
+        <h3 data-i18n="skill_cat_ai">AI & Data</h3>
+        <ul>
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>Scikit-Learn</li>
+            <li>Pandas</li>
+            <li data-i18n="skill_data_analysis">Data Analysis</li>
+            <li data-i18n="skill_data_cleaning">Data Cleaning</li>
+        </ul>
+    </div>
 
-<div class="card">
-    <h3>IoT & Embedded Systems</h3>
-    <ul>
-        <li>ESP8266</li>
-        <li>Arduino</li>
-        <li>Raspberry Pi</li>
-        <li>MQTT</li>
-        <li>REST APIs</li>
-        <li>Sensors Integration</li>
-    </ul>
-</div>
+    <div class="card">
+        <h3 data-i18n="skill_cat_iot">IoT & Embedded Systems</h3>
+        <ul>
+            <li>ESP8266</li>
+            <li>Arduino</li>
+            <li>Raspberry Pi</li>
+            <li>MQTT</li>
+            <li>REST APIs</li>
+            <li data-i18n="skill_sensors">Sensors Integration</li>
+        </ul>
+    </div>
 
-<div class="card">
-    <h3>Industrial Automation</h3>
-    <ul>
-        <li>Siemens PLC</li>
-        <li>Industrial Automation</li>
-        <li>Electrical Diagrams</li>
-        <li>AutoCAD Electrical</li>
-    </ul>
-</div>
+    <div class="card">
+        <h3 data-i18n="skill_cat_auto">Industrial Automation</h3>
+        <ul>
+            <li>Siemens PLC</li>
+            <li data-i18n="skill_ind_auto">Industrial Automation</li>
+            <li data-i18n="skill_elec_diag">Electrical Diagrams</li>
+            <li>AutoCAD Electrical</li>
+        </ul>
+    </div>
 
-<div class="card">
-    <h3>Cloud & Security</h3>
-    <ul>
-        <li>Google Cloud Platform</li>
-        <li>AWS (Learning)</li>
-        <li>Linux</li>
-        <li>IoT Security Assessment</li>
-    </ul>
-</div>
+    <div class="card">
+        <h3 data-i18n="skill_cat_cloud">Cloud & Security</h3>
+        <ul>
+            <li>Google Cloud Platform</li>
+            <li data-i18n="skill_aws">AWS (Learning)</li>
+            <li>Linux</li>
+            <li data-i18n="skill_iot_sec">IoT Security Assessment</li>
+        </ul>
+    </div>
 </section>
     
 <section id="projects">
-    <h2>Projects</h2>
-<div class="card">
-    <h3>Smart Greenhouse IoT System</h3>
+    <h2 data-i18n="projects_title">Projects</h2>
+    <div class="card">
+        <h3 data-i18n="proj1_title">Smart Greenhouse IoT System</h3>
+        <p data-i18n="proj1_desc">
+            IoT prototype developed using ESP8266,
+            MQTT communication and Ubidots cloud platform.
+        </p>
+        <h4 data-i18n="tech_label">Technologies</h4>
+        <p>
+            ESP8266, MQTT, Ubidots, DHT11, LDR Sensor,
+            Servo Motor, Python
+        </p>
+        <h4 data-i18n="highlights_label">Highlights</h4>
+        <ul>
+            <li data-i18n="proj1_h1">Environmental monitoring</li>
+            <li data-i18n="proj1_h2">Cloud visualization dashboard</li>
+            <li data-i18n="proj1_h3">Automated gate control</li>
+            <li data-i18n="proj1_h4">Real-time data transmission</li>
+        </ul>
+        <a href="https://github.com/Chas-kv/iot-dashboard-fastapi.git" target="_blank" rel="noopener noreferrer" data-i18n="view_repo">
+            View Repository
+        </a>
+    </div>
 
-    <p>
-        IoT prototype developed using ESP8266,
-        MQTT communication and Ubidots cloud platform.
-    </p>
+    <div class="card">
+        <h3 data-i18n="proj2_title">IoT Security Assessment</h3>
+        <p data-i18n="proj2_desc">
+            Security evaluation performed on an IoT device,
+            including vulnerability analysis,
+            attack simulation and hardening implementation.
+        </p>
+        <a href="Proyects/Proyecto modulo 2 IoT.pdf" target="_blank" rel="noopener noreferrer" data-i18n="view_doc">
+            View Document
+        </a>
+    </div>
 
-    <h4>Technologies</h4>
-
-    <p>
-        ESP8266, MQTT, Ubidots, DHT11, LDR Sensor,
-        Servo Motor, Python
-    </p>
-
-    <h4>Highlights</h4>
-
-    <ul>
-        <li>Environmental monitoring</li>
-        <li>Cloud visualization dashboard</li>
-        <li>Automated gate control</li>
-        <li>Real-time data transmission</li>
-    </ul>
-
-    <a href="https://github.com/Chas-kv/iot-dashboard-fastapi.git" target="_blank" rel="noopener noreferrer">
-        View Repository
-    </a>
-</div>
-
-
-<div class="card">
-    <h3>IoT Security Assessment</h3>
-
-    <p>
-        Security evaluation performed on an IoT device,
-        including vulnerability analysis,
-        attack simulation and hardening implementation.
-    </p>
-
-    <a href="Proyects/Proyecto modulo 2 IoT.pdf" target="_blank" rel="noopener noreferrer">
-        View Repository
-    </a>
-</div>
-
-
-<div class="card">
-    <h3>Machine Learning Projects</h3>
-
-    <p>
-        Experiments involving data preprocessing,
-        clustering and predictive analytics
-        using Python and Scikit-Learn.
-    </p>
-
-    <a href="https://github.com/Chas-kv/Proyect_IAModel_cemento.git" target="_blank" rel="noopener noreferrer">
-        View Repository
-    </a>
-</div>
+    <div class="card">
+        <h3 data-i18n="proj3_title">Machine Learning Projects</h3>
+        <p data-i18n="proj3_desc">
+            Experiments involving data preprocessing,
+            clustering and predictive analytics
+            using Python and Scikit-Learn.
+        </p>
+        <a href="https://github.com/Chas-kv/Proyect_IAModel_cemento.git" target="_blank" rel="noopener noreferrer" data-i18n="view_repo">
+            View Repository
+        </a>
+    </div>
 </section>
 
 <section id="certifications">
-    <h2>Certifications</h2>
-<div class="card">
-    <h3>Google Cloud</h3>
-
-    <p>
-       Configure cloud environments, implement and deploy applications, manage security and access control
-        and monitor the proper functioning of systems.
-    </p>
-
-    <a href="https://www.credly.com/users/kevin-julian-chavarria-olarte/badges/credly">
-        Verify Credential
-    </a>
-</div>
-
-<div class="card">
-    <h3>Automate cybersecurity tasks with Python</h3>
-
-    <p>
-      How to Use the Python Programming Language in Cybersecurity,
-
-      Creating New User-Defined, Python Functions
-
-      Using Regular Expressions to Extract Information from Text,
-
-      Code Debugging Practice.
-    </p>
-    
-     <a href="https://coursera.org/share/55af475abdbf34373829367b39bccf95">
-        Verify Credential
-    </a>
-</div>
-
-<div class="card">
-    <h3>Artificial Intelligence Training</h3>
-
-    <p>
-        Use advanced tools to develop intelligent programs,
-
-        focusing on natural language processing (NLP), business intelligence, and
-
-        designing technological solutions for real-world business problems.
-    </p>
-    
-     <a href="https://www.auco.ai/verify/?code=HA32B3MVSI">
-        Verify Credential
-    </a>
-</div>
-
-<div class="card">
-    <h3>Professional Certificate IoT</h3>
-
-    <p>
-      Secure design and development of connected embedded systems, with experience in data acquisition, 
-      automated control, and integration with RESTful APIs. Proficient in applying firmware hardening techniques and 
-      security verification to mitigate vulnerabilities in the implemented system.
-    </p>
+    <h2 data-i18n="cert_title">Certifications</h2>
     <div class="card">
-    <h3>Professional Certificate IoT</h3>
+        <h3>Google Cloud</h3>
+        <p data-i18n="cert1_desc">
+            Configure cloud environments, implement and deploy applications, manage security and access control
+            and monitor the proper functioning of systems.
+        </p>
+        <a href="https://www.credly.com/users/kevin-julian-chavarria-olarte/badges/credly" target="_blank" rel="noopener noreferrer" data-i18n="verify_cred">
+            Verify Credential
+        </a>
+    </div>
 
-    <p>
-        Comprehensive diploma focused on Internet of Things (IoT)
-        architectures, communication protocols, cloud integration,
-        embedded systems and security.
-    </p>
+    <div class="card">
+        <h3 data-i18n="cert2_title">Automate cybersecurity tasks with Python</h3>
+        <p data-i18n="cert2_desc">
+            How to Use the Python Programming Language in Cybersecurity,
+            Creating New User-Defined Python Functions,
+            Using Regular Expressions to Extract Information from Text,
+            Code Debugging Practice.
+        </p>
+        <a href="https://coursera.org/share/55af475abdbf34373829367b39bccf95" target="_blank" rel="noopener noreferrer" data-i18n="verify_cred">
+            Verify Credential
+        </a>
+    </div>
 
-    <h4>Topics Covered</h4>
+    <div class="card">
+        <h3 data-i18n="cert3_title">Artificial Intelligence Training</h3>
+        <p data-i18n="cert3_desc">
+            Use advanced tools to develop intelligent programs,
+            focusing on natural language processing (NLP), business intelligence, and
+            designing technological solutions for real-world business problems.
+        </p>
+        <a href="https://www.auco.ai/verify/?code=HA32B3MVSI" target="_blank" rel="noopener noreferrer" data-i18n="verify_cred">
+            Verify Credential
+        </a>
+    </div>
 
-    <ul>
-        <li>IoT Architecture and Components</li>
-        <li>Arduino and ESP8266 Development</li>
-        <li>Raspberry Pi Programming with Python</li>
-        <li>MQTT and REST APIs</li>
-        <li>Cloud and Fog Computing</li>
-        <li>IoT Security Assessment</li>
-        <li>Kali Linux Security Testing</li>
-        <li>Smart Systems and Industrial Applications</li>
-    </ul>
-
-    <a href="certificate/Diplomado IoT.pdf"
-       target="_blank"
-       class="action-btn">
-       View Certificate
-    </a>
-</div>
-</div>
+    <div class="card">
+        <h3 data-i18n="cert4_title">Professional Certificate IoT</h3>
+        <p data-i18n="cert4_desc">
+            Comprehensive diploma focused on Internet of Things (IoT)
+            architectures, communication protocols, cloud integration,
+            embedded systems and security. Proficient in applying firmware hardening techniques and 
+            security verification to mitigate vulnerabilities.
+        </p>
+        <h4 data-i18n="topics_label">Topics Covered</h4>
+        <ul>
+            <li data-i18n="cert4_t1">IoT Architecture and Components</li>
+            <li data-i18n="cert4_t2">Arduino and ESP8266 Development</li>
+            <li data-i18n="cert4_t3">Raspberry Pi Programming with Python</li>
+            <li>MQTT and REST APIs</li>
+            <li data-i18n="cert4_t4">Cloud and Fog Computing</li>
+            <li data-i18n="cert4_t5">IoT Security Assessment</li>
+            <li data-i18n="cert4_t6">Kali Linux Security Testing</li>
+            <li data-i18n="cert4_t7">Smart Systems and Industrial Applications</li>
+        </ul>
+        <a href="certificate/Diplomado IoT.pdf" target="_blank" class="action-btn" data-i18n="view_cert">
+            View Certificate
+        </a>
+    </div>
 </section>
     
-    
 <section id="contact">
-    <h2>Contact</h2>
-
+    <h2 data-i18n="contact_title">Contact</h2>
     <p>
-    GitHub:
-    <a href="https://github.com/Chas-kv" target="_blank">
-        Chas-kv
-    </a>
+        GitHub:
+        <a href="https://github.com/Chas-kv" target="_blank" rel="noopener noreferrer">Chas-kv</a>
     </p>
     <p>
-    LinkedIn:
-  <a href="https://www.linkedin.com/in/kevin-julian-chavarria-olarte-b55135253" target="_blank">
-    View Profile
-    </a>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/kevin-julian-chavarria-olarte-b55135253" target="_blank" rel="noopener noreferrer" data-i18n="view_profile">
+            View Profile
+        </a>
     </p>
-    <a href="Resume_MM.pdf" target="_blank" class="action-btn">
-    Download Resume</a>
+    <a href="Resume_MM.pdf" id="resume-link" target="_blank" class="action-btn" data-i18n="download_resume">
+        Download Resume
+    </a>
 </section>
 
 <footer>
-    <p>© 2026 Kevin Chavarria</p>
+    <p data-i18n="footer_text">© 2026 Kevin Chavarria</p>
 </footer>
+
 <script>
+const translations = {
+    en: {
+        page_title: "Kevin Chavarria | AI & Automation Engineer",
+        subtitle: "Mechatronics Engineer | AI | Machine Learning | IoT | Automation",
+        nav_about: "About",
+        nav_skills: "Skills",
+        nav_projects: "Projects",
+        nav_certifications: "Certifications",
+        nav_contact: "Contact",
+        about_title: "About Me",
+        about_p1: "I am a Mechatronics Engineer with hands-on experience in Python, Machine Learning, IoT systems, industrial automation, cloud technologies, and cybersecurity.",
+        about_p2: "My background combines hardware and software development, allowing me to design intelligent solutions that integrate sensors, cloud services, automation systems and data analysis.",
+        about_p3: "I have developed IoT prototypes using ESP8266, MQTT, Ubidots, and Raspberry Pi, applied machine learning techniques with Python and Scikit-Learn, and I worked on cybersecurity assessments and hardening for IoT devices.",
+        about_p4: "I am particularly interested in Artificial Intelligence, automation, data-driven solutions, and cloud-based systems, and I am continuously expanding my skills in Google Cloud and AWS technologies.",
+        skills_title: "Skills",
+        skill_cat_ai: "AI & Data",
+        skill_data_analysis: "Data Analysis",
+        skill_data_cleaning: "Data Cleaning",
+        skill_cat_iot: "IoT & Embedded Systems",
+        skill_sensors: "Sensors Integration",
+        skill_cat_auto: "Industrial Automation",
+        skill_ind_auto: "Industrial Automation",
+        skill_elec_diag: "Electrical Diagrams",
+        skill_cat_cloud: "Cloud & Security",
+        skill_aws: "AWS (Learning)",
+        skill_iot_sec: "IoT Security Assessment",
+        projects_title: "Projects",
+        proj1_title: "Smart Greenhouse IoT System",
+        proj1_desc: "IoT prototype developed using ESP8266, MQTT communication and Ubidots cloud platform.",
+        tech_label: "Technologies",
+        highlights_label: "Highlights",
+        proj1_h1: "Environmental monitoring",
+        proj1_h2: "Cloud visualization dashboard",
+        proj1_h3: "Automated gate control",
+        proj1_h4: "Real-time data transmission",
+        view_repo: "View Repository",
+        proj2_title: "IoT Security Assessment",
+        proj2_desc: "Security evaluation performed on an IoT device, including vulnerability analysis, attack simulation and hardening implementation.",
+        view_doc: "View Document",
+        proj3_title: "Machine Learning Projects",
+        proj3_desc: "Experiments involving data preprocessing, clustering and predictive analytics using Python and Scikit-Learn.",
+        cert_title: "Certifications",
+        cert1_desc: "Configure cloud environments, implement and deploy applications, manage security and access control and monitor the proper functioning of systems.",
+        verify_cred: "Verify Credential",
+        cert2_title: "Automate cybersecurity tasks with Python",
+        cert2_desc: "How to Use the Python Programming Language in Cybersecurity, Creating New User-Defined Python Functions, Using Regular Expressions to Extract Information from Text, Code Debugging Practice.",
+        cert3_title: "Artificial Intelligence Training",
+        cert3_desc: "Use advanced tools to develop intelligent programs, focusing on natural language processing (NLP), business intelligence, and designing technological solutions for real-world business problems.",
+        cert4_title: "Professional Certificate IoT",
+        cert4_desc: "Comprehensive diploma focused on Internet of Things (IoT) architectures, communication protocols, cloud integration, embedded systems and security. Proficient in applying firmware hardening techniques and security verification to mitigate vulnerabilities.",
+        topics_label: "Topics Covered",
+        cert4_t1: "IoT Architecture and Components",
+        cert4_t2: "Arduino and ESP8266 Development",
+        cert4_t3: "Raspberry Pi Programming with Python",
+        cert4_t4: "Cloud and Fog Computing",
+        cert4_t5: "IoT Security Assessment",
+        cert4_t6: "Kali Linux Security Testing",
+        cert4_t7: "Smart Systems and Industrial Applications",
+        view_cert: "View Certificate",
+        contact_title: "Contact",
+        view_profile: "View Profile",
+        download_resume: "Download Resume",
+        resume_file: "Resume_MM.pdf",
+        footer_text: "© 2026 Kevin Chavarria"
+    },
+    es: {
+        page_title: "Kevin Chavarria | Ingeniero de IA y Automatización",
+        subtitle: "Ingeniero Mecatrónico | IA | Machine Learning | IoT | Automatización",
+        nav_about: "Sobre mí",
+        nav_skills: "Habilidades",
+        nav_projects: "Proyectos",
+        nav_certifications: "Certificaciones",
+        nav_contact: "Contacto",
+        about_title: "Sobre mí",
+        about_p1: "Soy Ingeniero Mecatrónico con experiencia práctica en Python, Machine Learning, sistemas IoT, automatización industrial, tecnologías en la nube y ciberseguridad.",
+        about_p2: "Mi perfil combina el desarrollo de hardware y software, permitiéndome diseñar soluciones inteligentes que integran sensores, servicios en la nube, sistemas de automatización y análisis de datos.",
+        about_p3: "He desarrollado prototipos IoT utilizando ESP8266, MQTT, Ubidots y Raspberry Pi, aplicado técnicas de Machine Learning con Python y Scikit-Learn, y realizado evaluaciones de ciberseguridad y endurecimiento (hardening) en dispositivos IoT.",
+        about_p4: "Tengo un interés especial en la Inteligencia Artificial, la automatización, las soluciones basadas en datos y los sistemas en la nube, expandiendo continuamente mis habilidades en tecnologías de Google Cloud y AWS.",
+        skills_title: "Habilidades",
+        skill_cat_ai: "IA y Datos",
+        skill_data_analysis: "Análisis de Datos",
+        skill_data_cleaning: "Limpieza de Datos",
+        skill_cat_iot: "IoT y Sistemas Embebidos",
+        skill_sensors: "Integración de Sensores",
+        skill_cat_auto: "Automatización Industrial",
+        skill_ind_auto: "Automatización Industrial",
+        skill_elec_diag: "Planos Eléctricos",
+        skill_cat_cloud: "Nube y Seguridad",
+        skill_aws: "AWS (En aprendizaje)",
+        skill_iot_sec: "Evaluación de Seguridad IoT",
+        projects_title: "Proyectos",
+        proj1_title: "Sistema IoT de Invernadero Inteligente",
+        proj1_desc: "Prototipo IoT desarrollado con ESP8266, comunicación MQTT y la plataforma en la nube Ubidots.",
+        tech_label: "Tecnologías",
+        highlights_label: "Aspectos Destacados",
+        proj1_h1: "Monitoreo ambiental",
+        proj1_h2: "Panel de visualización en la nube",
+        proj1_h3: "Control automatizado de compuertas",
+        proj1_h4: "Transmisión de datos en tiempo real",
+        view_repo: "Ver Repositorio",
+        proj2_title: "Evaluación de Seguridad IoT",
+        proj2_desc: "Evaluación de seguridad realizada en un dispositivo IoT, incluyendo análisis de vulnerabilidades, simulación de ataques e implementación de hardening.",
+        view_doc: "Ver Documento",
+        proj3_title: "Proyectos de Machine Learning",
+        proj3_desc: "Experimentos de preprocesamiento de datos, clustering y analítica predictiva utilizando Python y Scikit-Learn.",
+        cert_title: "Certificaciones",
+        cert1_desc: "Configuración de entornos en la nube, implementación y despliegue de aplicaciones, gestión de seguridad y control de acceso, y monitoreo del funcionamiento de sistemas.",
+        verify_cred: "Verificar Credencial",
+        cert2_title: "Automatización de tareas de ciberseguridad con Python",
+        cert2_desc: "Uso del lenguaje de programación Python en ciberseguridad, creación de funciones definidas por el usuario, uso de expresiones regulares para extraer información de texto y depuración de código.",
+        cert3_title: "Entrenamiento en Inteligencia Artificial",
+        cert3_desc: "Uso de herramientas avanzadas para desarrollar programas inteligentes, con enfoque en procesamiento de lenguaje natural (NLP), inteligencia de negocios y diseño de soluciones tecnológicas para problemas empresariales reales.",
+        cert4_title: "Diplomado Profesional en IoT",
+        cert4_desc: "Diplomado integral enfocado en arquitecturas de Internet de las Cosas (IoT), protocolos de comunicación, integración en la nube, sistemas embebidos y seguridad. Competente en técnicas de hardening de firmware y verificación de seguridad para mitigar vulnerabilidades.",
+        topics_label: "Temas Cubiertos",
+        cert4_t1: "Arquitectura y Componentes de IoT",
+        cert4_t2: "Desarrollo con Arduino y ESP8266",
+        cert4_t3: "Programación de Raspberry Pi con Python",
+        cert4_t4: "Computación en la Nube y Niebla (Cloud & Fog Computing)",
+        cert4_t5: "Evaluación de Seguridad IoT",
+        cert4_t6: "Pruebas de Seguridad con Kali Linux",
+        cert4_t7: "Sistemas Inteligentes y Aplicaciones Industriales",
+        view_cert: "Ver Certificado",
+        contact_title: "Contacto",
+        view_profile: "Ver Perfil",
+        download_resume: "Descargar Hoja de Vida",
+        resume_file: "Hoja de vida  de kevin.pdf",
+        footer_text: "© 2026 Kevin Chavarria"
+    }
+};
 
-if(localStorage.getItem("theme") === "dark"){
-    document.body.classList.add("dark-mode");
-}
+let currentLang = localStorage.getItem("lang") || "en";
 
-function toggleTheme() {
+function applyLanguage(lang) {
+    document.documentElement.lang = lang;
+    const dict = translations[lang];
 
-    document.body.classList.toggle("dark-mode");
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) {
+            el.textContent = dict[key];
+        }
+    });
 
-    if(document.body.classList.contains("dark-mode")){
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
+    // Cambiar el archivo de la Hoja de Vida según el idioma
+    const resumeLink = document.getElementById("resume-link");
+    if (resumeLink) {
+        resumeLink.setAttribute("href", dict.resume_file);
+    }
+
+    // Mostrar en el botón el idioma al que se cambiará al hacer clic
+    const langBtn = document.getElementById("lang-btn");
+    if (langBtn) {
+        langBtn.textContent = lang === "en" ? "ES" : "EN";
     }
 }
 
+function toggleLanguage() {
+    currentLang = currentLang === "en" ? "es" : "en";
+    localStorage.setItem("lang", currentLang);
+    applyLanguage(currentLang);
+}
+
+// Gestión del Tema (Modo Oscuro / Claro)
+const themeBtn = document.getElementById("theme-btn");
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    themeBtn.textContent = "☀️";
+}
+
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+        themeBtn.textContent = "☀️";
+    } else {
+        localStorage.setItem("theme", "light");
+        themeBtn.textContent = "🌙";
+    }
+}
+
+// Inicializar el idioma al cargar la página
+applyLanguage(currentLang);
 </script>
 </body>
 </html>

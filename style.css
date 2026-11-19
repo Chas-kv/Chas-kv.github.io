@@ -27,6 +27,7 @@ body {
     color: var(--text-color);
     transition: 0.3s;
 }
+
 a {
     color: var(--link-color);
     text-decoration: none;
@@ -37,6 +38,7 @@ a:hover {
     color: var(--link-hover);
     text-decoration: underline;
 }
+
 .action-btn {
     display: inline-block;
     background: #2563eb;
@@ -61,21 +63,15 @@ header {
 
 nav {
     background: rgba(17, 24, 39, 0.95);
-
     padding: 15px;
-
     text-align: center;
-
     position: sticky;
     top: 0;
-
     z-index: 1000;
-
     backdrop-filter: blur(10px);
-
     width: 100%;
+    box-sizing: border-box;
 }
-
 
 nav a {
     color: white;
@@ -87,9 +83,9 @@ section {
     max-width: 1000px;
     margin: auto;
     padding: 40px 20px;
-
     scroll-margin-top: 80px;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -108,58 +104,77 @@ footer {
     padding: 20px;
 }
 
-.theme-btn {
+/* ===== CONTROLES FLOTANTES (IDIOMA Y TEMA) ===== */
+.floating-controls {
     position: fixed;
     top: 20px;
     right: 20px;
-
     z-index: 9999;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
+.control-btn {
     background: #2563eb;
     color: white;
-
     border: none;
     border-radius: 8px;
-
-    padding: 10px 15px;
-
+    height: 40px;
+    padding: 0 14px;
     cursor: pointer;
-
-    font-size: 16px;
-
+    font-size: 15px;
+    font-weight: bold;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* ===== MOBILE DEVICES ===== */
 
+.control-btn:hover {
+    background: #1d4ed8;
+}
+
+.theme-btn {
+    width: 42px;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* ===== MOBILE DEVICES ===== */
 @media (max-width: 768px) {
+    .floating-controls {
+        top: 12px;
+        right: 12px;
+        gap: 8px;
+    }
+
+    .control-btn {
+        height: 36px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .theme-btn {
+        width: 36px;
+        padding: 0;
+    }
 
     nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-
-        padding-top: 60px;
+        padding-top: 55px;
     }
 
     nav a {
         margin: 5px;
     }
 
-    {
-
-    .theme-btn {
-        width: 40px;
-        height: 40px;
-
-        padding: 0;
-
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
     header {
-        padding: 40px 15px;
+        padding: 50px 15px 40px;
     }
 
     section {
@@ -169,5 +184,4 @@ footer {
     .card {
         padding: 15px;
     }
-
 }

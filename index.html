@@ -10,8 +10,10 @@
 <body>
 
 <div class="floating-controls">
-    <button class="control-btn lang-btn" id="lang-btn" onclick="toggleLanguage()" title="Switch Language">
-        ES
+    <button class="control-btn lang-btn" id="lang-btn" onclick="toggleLanguage()" title="Switch Language / Cambiar Idioma">
+        <span class="lang-icon">🌐</span>
+        <span class="lang-text-desktop" id="lang-text-desktop">Español</span>
+        <span class="lang-text-mobile" id="lang-text-mobile">ES</span>
     </button>
     <button class="control-btn theme-btn" id="theme-btn" onclick="toggleTheme()" title="Toggle Theme">
         🌙
@@ -377,16 +379,23 @@ function applyLanguage(lang) {
         }
     });
 
-    // Cambiar el archivo de la Hoja de Vida según el idioma
     const resumeLink = document.getElementById("resume-link");
     if (resumeLink) {
         resumeLink.setAttribute("href", dict.resume_file);
     }
 
-    // Mostrar en el botón el idioma al que se cambiará al hacer clic
-    const langBtn = document.getElementById("lang-btn");
-    if (langBtn) {
-        langBtn.textContent = lang === "en" ? "ES" : "EN";
+    // Actualizar textos para PC y Móvil
+    const desktopText = document.getElementById("lang-text-desktop");
+    const mobileText = document.getElementById("lang-text-mobile");
+    
+    if (desktopText && mobileText) {
+        if (lang === "en") {
+            desktopText.textContent = "Español";
+            mobileText.textContent = "ES";
+        } else {
+            desktopText.textContent = "English";
+            mobileText.textContent = "EN";
+        }
     }
 }
 

@@ -107,12 +107,18 @@ footer {
 /* ===== CONTROLES FLOTANTES (IDIOMA Y TEMA) ===== */
 .floating-controls {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 16px;
+    right: 24px;
     z-index: 9999;
     display: flex;
     gap: 10px;
     align-items: center;
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 6px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .control-btn {
@@ -121,25 +127,40 @@ footer {
     border: none;
     border-radius: 8px;
     height: 40px;
-    padding: 0 14px;
+    padding: 0 16px;
     cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    transition: background 0.3s, transform 0.2s;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
 }
 
 .control-btn:hover {
     background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+}
+
+.control-btn:active {
+    transform: translateY(0);
+}
+
+.lang-icon {
+    font-size: 16px;
+}
+
+.lang-text-mobile {
+    display: none;
 }
 
 .theme-btn {
-    width: 42px;
+    width: 40px;
     padding: 0;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 /* ===== MOBILE DEVICES ===== */
@@ -147,13 +168,24 @@ footer {
     .floating-controls {
         top: 12px;
         right: 12px;
-        gap: 8px;
+        gap: 6px;
+        padding: 4px;
+        border-radius: 10px;
     }
 
     .control-btn {
         height: 36px;
         padding: 0 10px;
         font-size: 14px;
+    }
+
+    .lang-icon,
+    .lang-text-desktop {
+        display: none;
+    }
+
+    .lang-text-mobile {
+        display: inline;
     }
 
     .theme-btn {
